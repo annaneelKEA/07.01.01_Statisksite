@@ -1,46 +1,64 @@
-/* ////////////Header //////// */
-header .logo a {
-  font-size: 0.5rem;
-  align-items: start;
-  -ms-flex-item-align: start;
+mainNav h1 span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: var(--off-color);
 }
-
-header {
-  top: 0;
-  padding: 1rem 2rem;
-  display: flex;
-  margin-bottom: 10px;
-  background-color: white;
+body {
+  padding: 0;
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  font-weight: 400;
+  line-height: 1.563;
+  color: var(--color);
+  background-color: var(--background-color);
+  caret-color: var(--caret-color);
 }
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+.purchaseBox {
+  background: #d8d8d8;
+  color: var(--background-color);
+  padding: 1rem;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding-bottom: 0.4rem;
-  gap: 50px;
-  overflow-x: auto;
-  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+h1 {
+  font-size: 3.052rem;
+  letter-spacing: -0.1rem;
+  line-height: 1;
 }
-
-ul {
-  position: center;
-  color: #0b3c91;
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+}
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+dt {
+  display: block;
+}
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+.info {
+  padding: 1rem;
+}
+html {
+  font-size: calc(18px + ((100vw - 600px) / 250));
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
 }
 a {
-  text-decoration: none;
-  color: #0b3c91;
-  font-size: 20px;
-  justify-content: space-between;
-  text-align: right;
-  font-weight: 90;
-  font-family: "Righteous", cursive;
+  color: black;
+  /* background: greenyellow; */
+  padding: 36px;
 }

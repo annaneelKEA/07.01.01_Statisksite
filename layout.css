@@ -1,0 +1,14 @@
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kategori_liste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.grid_produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
