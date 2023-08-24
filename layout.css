@@ -2,13 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgb(243, 233, 229);
+  box-shadow: 100px 90px 1000px rgba(245, 161, 235, 0.99);
 }
 .kategori_liste {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  padding: 36px;
 }
 .grid_produkt {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* produktliste ..,.,. */
+.grid_price {
+  display: flex;
+  justify-content: space-between;
+}
+.grid_produktliste1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.container_grid {
+  width: 70%;
+  margin: 0 0 0 3%;
+  padding: 20px;
+}
+.grid_size {
+  display: flex;
+  grid-template-columns: 2fr 1fr;
 }

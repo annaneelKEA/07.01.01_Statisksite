@@ -1,40 +1,103 @@
-mainNav h1 span {
-  display: inline-block;
-  transform: scaleX(-1) translateX(-0.2rem);
-  color: var(--off-color);
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
-  padding: 0;
-  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
-  font-weight: 400;
-  line-height: 1.563;
-  color: var(--color);
-  background-color: var(--background-color);
-  caret-color: var(--caret-color);
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: rgb(243, 233, 229);
 }
+
+p {
+  font-size: 20px;
+  font-family: "massilia", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+/* Produkt ..... */
 .purchaseBox {
-  background: #d8d8d8;
-  color: var(--background-color);
+  background-color: rgb(182, 179, 179);
   padding: 1rem;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
+.produkt_h3 {
+  color: green;
+  font-family: "zuume-cut", sans-serif;
+  font-weight: 70px;
+  font-style: normal;
+  font-size: 100px;
+  margin-bottom: 10px;
 }
+
 h1 {
-  font-size: 3.052rem;
-  letter-spacing: -0.1rem;
-  line-height: 1;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
 h2 {
-  font-size: 2.441rem;
-  letter-spacing: -0.12rem;
-  line-height: 1.2;
+  color: black;
+  font-family: "massilia", sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+label {
+  display: block; /* Gør label til en blok, så den har sin egen linje */
+  margin-bottom: 5px; /* Tilføj lidt plads nedenfor label */
+  font-weight: bold; /* Gør teksten fed for bedre synlighed */
+  font-family: "massilia", sans-serif;
+}
+.p_produkt {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(192, 189, 189);
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  font-family: "massilia", sans-serif;
+  margin-top: 1.5rem;
+  margin-left: 10px;
+  width: 195px; /* Angiv den ønskede bredde */
+  height: 28px; /* Angiv den ønskede højde */
+  box-sizing: border-box; /* Inkluder kant i elementets totale størrelse */
+}
+
+/* Valgfrit: Tilføj yderligere styling til input-feltet */
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Index ................. */
+h3 {
+  color: green;
+  font-family: "zuume-cut", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 200px;
+  margin-bottom: 10px;
+  text-shadow: 0px 50px 100px rgba(245, 161, 235, 0.99);
+}
+
+.p_index {
+  color: black;
+  font-size: 20px;
+  font-family: "massilia", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.a_index {
+  color: black;
+  font-size: 20px;
+  font-family: "massilia", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 10px;
 }
 dl {
   display: block;
@@ -42,23 +105,116 @@ dl {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: black;
 }
 dt {
   display: block;
+  font-family: "massilia", sans-serif;
+  color: green;
+  font-weight: bold;
 }
 dd {
   display: block;
-  margin-inline-start: 40px;
+  margin-inline-start: 2px;
+  font-family: "massilia", sans-serif;
 }
 .info {
   padding: 1rem;
 }
-html {
-  font-size: calc(18px + ((100vw - 600px) / 250));
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-}
+
 a {
   color: black;
-  /* background: greenyellow; */
-  padding: 36px;
+  font-family: "massilia", sans-serif;
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  border-radius: 5px;
+  text-underline-offset: 2px;
+  color: orchid;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Menu::::::::::: */
+.a_menu {
+  color: black;
+  font-family: "zuume-cut", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+nav a {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  gap: 2px;
+  font-family: "zuume-cut", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+/* Kategori............ */
+.a_kategori {
+  padding: 20%;
+  font-family: "massilia", sans-serif;
+  background-color: rgb(212, 155, 211);
+  border-radius: 200px;
+  display: inline-block;
+  height: 68px;
+  width: 185px;
+}
+.kategori_liste a {
+  color: white;
+  font-family: "massilia", sans-serif;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+/* Produktliste ......... */
+h4 {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+.p_1 {
+  color: gray;
+  margin: 0;
+  font-size: 20px;
+}
+.p_price {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+}
+.procent {
+  color: white;
+  padding: 0.2rem;
+  position: absolute;
+  top: 472px; /* Juster værdierne efter ønsket position */
+  right: 2px;
+  background-color: red; /* Baggrundsfarve med gennemsigtighed */
+  padding: 5px;
+}
+.p_read a {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+}
+.image_container {
+  position: relative;
+  display: inline-block;
+}
+.udsolgt_container {
+  position: relative;
+  display: inline-block;
+  opacity: 0.7;
+}
+.udsolgt {
+  color: white;
+  padding: 0.2rem;
+  position: absolute;
+  top: -14px; /* Juster værdierne efter ønsket position */
+  right: 186x;
+  background-color: gray; /* Baggrundsfarve med gennemsigtighed */
+  padding: 12px;
 }
