@@ -18,19 +18,20 @@ function showProduct(product) {
   // Ændre indhold//
   copy.querySelector("h4").textContent = product.productdisplayname;
   copy.querySelector("p").textContent = product.category;
-  copy.querySelector("p").textContent = product.gender;
-  copy.querySelector("p").textContent = product.subcategory;
-  copy.querySelector("p").textContent = product.articletype;
-  copy.querySelector("p").textContent = product.season;
-  copy.querySelector("p").textContent = product.productionyear;
-  copy.querySelector("p").textContent = product.usagetype;
-  copy.querySelector("p").textContent = product.price;
-  copy.querySelector("p").textContent = product.brandname;
+  //   copy.querySelector("p").textContent = product.gender;
+  //   copy.querySelector("p").textContent = product.subcategory;
+  //   copy.querySelector("p").textContent = product.articletype;
+  //   copy.querySelector("p").textContent = product.season;
+  //   copy.querySelector("p").textContent = product.productionyear;
+  //   copy.querySelector("p").textContent = product.usagetype;
+  copy.querySelector(".p_price").textContent = product.price;
+  copy.querySelector(".p_1").textContent = product.brandname;
   copy.querySelector("img").src = "https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp";
 
   if (product.souldout) {
     // produkt udsolgt//
     copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector("article").classList.add("procent");
   }
   // appende//
   document.querySelector("main").appendChild(copy);
