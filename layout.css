@@ -26,6 +26,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+#smallProductTemplate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 .container_grid {
   width: 70%;
   margin: 0 0 0 3%;

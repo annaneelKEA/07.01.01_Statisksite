@@ -38,15 +38,17 @@
         <div class="container_grid">
             <h2 class="produkt_h3">Nike</h2>
             <div class="grid_produktliste1">
-                <div>
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blå jersey">
-                    <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
-                    <p class="p_1">Tshirts | Nike</p>
-                    &nbsp;
-                    <p class="p_price">DKK 1595,-</p>
-                    <div class="p_read"> <a href="produkt.html">Read more</a></div>
-                </div>
-                <div>
+                <template id="smallProductTemplate">
+                    <div class="smallProduct">
+                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blå jersey">
+                        <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
+                        <p class="p_1">Tshirts | Nike</p>
+                        &nbsp;
+                        <p class="p_price">DKK 1595,-</p>
+                        <div class="p_read"> <a href="produkt.html">Read more</a></div>
+                    </div>
+                </template>
+                <!-- <div class="smallProduct onSale">
                     <div class="image_container">
                         <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blå jersey">
                         <p class="procent">34%</p>
@@ -58,7 +60,7 @@
                     <p class="p_price">Now DKK 1560,-</p>
                     <div class="p_read"> <a href="produkt.html">Read more</a></div>
                 </div>
-                <div>
+                <div class="smallProduct soldOut">
                     <div class="udsolgt_container">
                         <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="jersey">
                         <p class="udsolgt">SOULD OUT</p>
@@ -69,7 +71,7 @@
                     <p class="p_price">DKK 1595,-</p>
                     <div class="p_read"> <a href="produkt.html">Read more</a></div>
                 </div>
-                <div>
+                <div class="smallProduct">
                     <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="jersey">
                     <h4>Blue T20 Indian Cricket Jersey</h4>
                     <p class="p_1">Tshirts | Nike</p>
@@ -77,20 +79,21 @@
                     <p class="p_price">DKK 1595,-</p>
                     <div class="p_read"> <a href="produkt.html">Read more</a></div>
                 </div>
-                <div>
+                <div class="smallProduct">
                     <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="jersey">
                     <h4>Blue T20 Indian Cricket Jersey</h4>
                     <p class="p_1">Tshirts | Nike</p>
                     &nbsp;
                     <p class="p_price">DKK 1595,-</p>
                     <div class="p_read"> <a href="produkt.html">Read more</a></div>
-                </div>
+                </div> -->
             </div>
 
         </div>
 
     </main>
-    <script src="main.js"></script>
+    <script src="produkstliste.js"></script>
+
 </body>
 
 </html>
