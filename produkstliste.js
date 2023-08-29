@@ -28,6 +28,8 @@ function showProduct(product) {
   copy.querySelector(".p_1").textContent = product.brandname;
   copy.querySelector("img").src = "https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp";
 
+  const parent = document.querySelector("#container_grid");
+
   if (product.souldout) {
     // produkt udsolgt//
     copy.querySelector("article").classList.add("soldOut");
@@ -35,29 +37,4 @@ function showProduct(product) {
   }
   // appende//
   document.querySelector("main").appendChild(copy);
-}
-
-{
-  /**       <div class="smallProduct">
-                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blå jersey">
-                        <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
-                        <p class="p_1">Tshirts | Nike</p>
-                        &nbsp;
-                        <p class="p_price">DKK 1595,-</p>
-                        <div class="p_read"> <a href="produkt.html">Read more</a></div>
-                    </div> */
-  /**
-   * id	1164
-   * gender	"Men"
-   * category	"Apparel"
-   * subcategory	"Topwear"
-   * articletype	"Tshirts"
-   * season	"Winter"
-   * productionyear	2015
-   * usagetype	"Sports"
-   * productdisplayname	"Blue T20 Indian Cricket Jersey"
-   * price	1595
-   * discount	28
-   * brandname	"Nike"
-   * soldout	1 */
 }

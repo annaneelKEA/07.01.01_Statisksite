@@ -195,7 +195,7 @@ h4 {
   background-color: red; /* Baggrundsfarve med gennemsigtighed */
   padding: 5px;
 }
-.p_read a {
+.p_read {
   color: black;
   margin: 0;
   font-size: 20px;
