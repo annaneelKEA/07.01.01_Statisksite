@@ -1,5 +1,8 @@
+const urlParams = new URLSearchParams(window.location.search);
+const kategori = urlParams.get("kategori");
+
 // fetche////
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch("https://kea-alt-del.dk/t7/api/products?kategori=" + kategori)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -10,6 +13,7 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
+  console.log(product);
   //   console.log(product);
   // Fange template//
   const template = document.querySelector("#smallProductTemplate").content;
@@ -18,23 +22,19 @@ function showProduct(product) {
   // Ændre indhold//
   copy.querySelector("h4").textContent = product.productdisplayname;
   copy.querySelector("p").textContent = product.category;
-  //   copy.querySelector("p").textContent = product.gender;
-  //   copy.querySelector("p").textContent = product.subcategory;
-  //   copy.querySelector("p").textContent = product.articletype;
-  //   copy.querySelector("p").textContent = product.season;
-  //   copy.querySelector("p").textContent = product.productionyear;
-  //   copy.querySelector("p").textContent = product.usagetype;
-  copy.querySelector(".p_price").textContent = product.price;
+  copy.querySelector(".p_price").textContent = product.price + " kr,-";
   copy.querySelector(".p_1").textContent = product.brandname;
-  copy.querySelector("img").src = "https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp";
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
-  const parent = document.querySelector("#container_grid");
-
-  if (product.souldout) {
+  if (product.soldout) {
     // produkt udsolgt//
-    copy.querySelector("article").classList.add("soldOut");
-    copy.querySelector("article").classList.add("procent");
+    copy.querySelector(".smallProduct").classList.add("udsolgt");
   }
+  if (product.discount) {
+    copy.querySelector(".smallProduct").classList.add("udsalg");
+    copy.querySelector(".procent").textContent = product.discount + "%";
+  }
+  copy.querySelector(".p_read").setAttribute("href", `produkt.html?id=${product.id}`);
   // appende//
-  document.querySelector("main").appendChild(copy);
+  document.querySelector("#grid").appendChild(copy);
 }

@@ -33,15 +33,15 @@ p {
 
 h1 {
   color: black;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "zuume-cut", sans-serif;
   font-size: 70px;
   margin-bottom: 10px;
 }
 h2 {
-  color: black;
+  color: green;
   font-family: "massilia", sans-serif;
   font-style: normal;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 label {
@@ -99,7 +99,7 @@ h3 {
   font-style: normal;
   margin-bottom: 10px;
 }
-dl {
+.dl_1 {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -107,16 +107,20 @@ dl {
   margin-inline-end: 0px;
   color: black;
 }
-dt {
+.dl_2 {
   display: block;
-  font-family: "massilia", sans-serif;
-  color: green;
-  font-weight: bold;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: black;
 }
-dd {
+
+p {
   display: block;
-  margin-inline-start: 2px;
   font-family: "massilia", sans-serif;
+  color: black;
+  font-weight: bold;
 }
 .info {
   padding: 1rem;
@@ -154,7 +158,7 @@ nav a {
   margin-bottom: 10px;
 }
 /* Kategori............ */
-.a_kategori {
+/* .a_kategori {
   padding: 20%;
   font-family: "massilia", sans-serif;
   background-color: rgb(212, 155, 211);
@@ -162,12 +166,18 @@ nav a {
   display: inline-block;
   height: 68px;
   width: 185px;
-}
+} */
 .kategori_liste a {
   color: white;
-  font-family: "massilia", sans-serif;
   font-size: 40px;
   text-decoration: none;
+  padding: 20%;
+  font-family: "massilia", sans-serif;
+  background-color: rgb(212, 155, 211);
+  border-radius: 200px;
+  display: inline-block;
+  height: 68px;
+  width: 185px;
 }
 
 /* Produktliste ......... */
@@ -187,14 +197,18 @@ h4 {
   font-size: 20px;
 }
 .procent {
+  display: none;
   color: white;
   padding: 0.2rem;
   position: absolute;
-  top: 472px; /* Juster værdierne efter ønsket position */
-  right: 2px;
   background-color: red; /* Baggrundsfarve med gennemsigtighed */
   padding: 5px;
 }
+
+.smallProduct.udsalg .procent {
+  display: block;
+}
+
 .p_read {
   color: black;
   margin: 0;
@@ -209,12 +223,16 @@ h4 {
   display: inline-block;
   opacity: 0.7;
 }
-.udsolgt {
+.soldOut {
+  display: none;
   color: white;
   padding: 0.2rem;
   position: absolute;
-  top: -14px; /* Juster værdierne efter ønsket position */
-  right: 186x;
   background-color: gray; /* Baggrundsfarve med gennemsigtighed */
   padding: 12px;
+  top: 954px;
+}
+
+.smallProduct.udsolgt .soldOut {
+  display: block;
 }
