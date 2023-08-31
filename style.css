@@ -157,16 +157,7 @@ nav a {
   font-style: normal;
   margin-bottom: 10px;
 }
-/* Kategori............ */
-/* .a_kategori {
-  padding: 20%;
-  font-family: "massilia", sans-serif;
-  background-color: rgb(212, 155, 211);
-  border-radius: 200px;
-  display: inline-block;
-  height: 68px;
-  width: 185px;
-} */
+
 .kategori_liste a {
   color: white;
   font-size: 40px;
@@ -203,6 +194,8 @@ h4 {
   position: absolute;
   background-color: red; /* Baggrundsfarve med gennemsigtighed */
   padding: 5px;
+  margin-top: -135px;
+  left: 872px;
 }
 
 .smallProduct.udsalg .procent {

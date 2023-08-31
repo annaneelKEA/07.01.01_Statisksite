@@ -9,6 +9,6 @@ function showProduct(product) {
   console.log(product);
   document.querySelector("h2").textContent = product.productdisplayname;
   document.querySelector("h1").textContent = product.brandname;
-  document.querySelector("p").textContent = product.description;
-  document.querySelector("img").src = `http://assets.myntassets.com/v1/assets/banners/2015/6/26/1435317851398-23197-3chxv6.jpg`;
+  document.querySelector("p").innerHTML = product.description;
+  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }

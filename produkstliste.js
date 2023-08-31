@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const kategori = urlParams.get("kategori");
 
 // fetche////
-fetch("https://kea-alt-del.dk/t7/api/products?kategori=" + kategori)
+fetch("https://kea-alt-del.dk/t7/api/products?categories=" + kategori)
   .then((res) => res.json())
   .then(showProducts);
 

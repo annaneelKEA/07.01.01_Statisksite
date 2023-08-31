@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(243, 233, 229);
-  box-shadow: 100px 90px 1000px rgba(245, 161, 235, 0.99);
+  /* box-shadow: 100px 90px 1000px rgba(245, 161, 235, 0.99); */
 }
 .kategori_liste {
   display: grid;

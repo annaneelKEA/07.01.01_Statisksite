@@ -13,7 +13,7 @@ function showCategory(cat) {
   const clone = template.cloneNode(true);
   // ændre indhold//
   clone.querySelector("a").textContent = cat.category;
-  clone.querySelector("a").href = `produktliste.html?id=${cat._id}`;
+  clone.querySelector("a").href = `produktliste.html?kategori=${cat.category}`;
   // appender//
   document.querySelector(".kategori_liste").appendChild(clone);
 }
