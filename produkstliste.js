@@ -1,10 +1,16 @@
 const urlParams = new URLSearchParams(window.location.search);
 const kategori = urlParams.get("kategori");
 
-// fetche////
-fetch("https://kea-alt-del.dk/t7/api/products?categories=" + kategori)
-  .then((res) => res.json())
-  .then(showProducts);
+if (kategori) {
+  // fetche////
+  fetch("https://kea-alt-del.dk/t7/api/products?category=" + kategori)
+    .then((res) => res.json())
+    .then(showProducts);
+} else {
+  fetch("https://kea-alt-del.dk/t7/api/products?products=")
+    .then((res) => res.json())
+    .then(showProducts);
+}
 
 function showProducts(products) {
   // looper og kalder showProduct//
